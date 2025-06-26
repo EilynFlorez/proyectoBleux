@@ -107,15 +107,17 @@ main {
 }
 .degradado {
     font-weight: 650;
-    font-size: 16px;
+    font-size: 18px;
     background-color: rgb(255, 255, 255);
-    background: linear-gradient(to right, rgb(235, 105, 172), rgb(244, 28, 138));
+    background: linear-gradient(
+        90deg , rgb(239, 112, 178), rgb(244, 28, 138)
+    );
     background-clip: text;/*Lo aplica solo en el texto*/
     color: transparent; /*Coloca el color del texto transparente*/
 }
 .btn2 {
     padding: 10px 40px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     background-color:rgb(46, 37, 80);
     color: rgb(237, 237, 240);
@@ -141,4 +143,101 @@ main {
     height: 70%;
     margin-bottom: 60px;
     margin-left: 150px;
+}
+
+/*Estilos de la segunda sección*/ 
+.seccion2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 75vh;
+    background-color: rgb(241, 242, 247);
+}
+.sec2-titulo {
+    text-align: center;
+    color: rgb(244, 20, 134);
+    padding-top: 30px;
+    font-size: 40px;
+    width: 100%;
+    height: 35%;
+}
+.sec2-part2 {
+    display: flex;
+    justify-content: start;
+    height: 65%;
+}
+.sec2-img {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+    height: 100%;
+}
+.sec2-img img {
+    width: 480px;
+    height: 300px;
+}
+.sec2-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 120px;
+    width: 50%;
+    height: 100%;
+}
+.sec2-text h3 {
+    background: linear-gradient(
+        90deg , rgb(199, 85, 144), rgb(200, 24, 114)
+    );
+    background-clip: text;/*Lo aplica solo en el texto*/
+    color: transparent; /*Coloca el color del texto transparente*/
+    font-size: 40px;
+    font-weight: 400;
+}
+.sec2-text p {
+    color: rgb(65, 65, 65);
+    margin-top: 40px;
+    width: 60%;
+}
+.tit-list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.tit-list h4 {
+    color: rgb(238, 63, 152);
+    font-size: 21px;
+    font-weight: 500;
+}
+.linea {
+    width: 20px;
+    height: 2.5px;
+    background-color: rgb(244, 20, 134);
+}
+.lista1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.list li{
+    font-size: 16px;
+    color: rgb(65, 65, 65);
+    list-style-type: none;
+}
+
+/*Estilos tercera seccion*/
+.seccion3 {
+    display: flex;
+    flex-direction: column;
+    height: 125vh;
+    width: 100%;
+    background-color: rgb(30, 23, 47);
 }
