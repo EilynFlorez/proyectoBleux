@@ -10,11 +10,14 @@ header {
     display: flex;
     padding: 0px;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
-    height: 10vh;
+    min-height: 10vh;
     background-color: rgb(30, 23, 47);
 }
 .logo {
+    display: flex;
+    align-items: center;
     height: 100%;
 }
 .logo img {
@@ -47,7 +50,7 @@ header {
     );
     border: none;
     border-radius: 5px;
-    padding: 13px 30px; /*Primero en x luego en y*/
+    padding: 11px 25px; /*Primero en x luego en y*/
     width: auto;
     height: auto;
     font-weight: 600;
@@ -62,7 +65,7 @@ main {
 .seccion1 {
     display: flex;
     width: 100%;
-    height: 90vh;
+    min-height: 90vh;
 }
 .text {
     display: flex;
@@ -93,6 +96,7 @@ main {
 }
 .botones {
     display: flex;
+    width: auto;
     gap: 8px;
     padding: 5px;
     border: 2px solid rgb(88, 81, 115);
@@ -141,7 +145,6 @@ main {
     height: 100%;
 }
 .div-img-2 img {
-    width: 30%;
     height: 70%;
     margin-bottom: 60px;
     margin-left: 150px;
@@ -152,21 +155,23 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 75vh;
+    min-height: 75vh;
+    padding-bottom: 20px;
     background-color: rgb(241, 242, 247);
 }
 .sec2-titulo {
     text-align: center;
     color: rgb(244, 20, 134);
     padding-top: 30px;
+    padding-bottom: 60px;
     font-size: 40px;
     width: 100%;
-    height: 35%;
+    height: 32%;
 }
 .sec2-part2 {
     display: flex;
     justify-content: start;
-    height: 65%;
+    height: 68%;
 }
 .sec2-img {
     display: flex;
@@ -175,7 +180,6 @@ main {
     height: 100%;
 }
 .sec2-img img {
-    width: 480px;
     height: 300px;
 }
 .sec2-text {
@@ -243,8 +247,9 @@ main {
 .seccion3 {
     display: flex;
     flex-direction: column;
-    height: 130vh;
     width: 100%;
+    min-height: 130vh;
+    padding-bottom: 5%;
     background-color: rgb(30, 23, 47);
 }
 .sec3-tit {
@@ -270,12 +275,14 @@ main {
 .cont-article {
     margin-top: 55px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     gap: 30px;
 }
 .sec3-art {
     width: 22%;
+    height: 90%;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
 }
@@ -337,9 +344,8 @@ main {
     align-items: center;
     margin-left: 25px;
     margin-top: 25px;
-    gap: 0px;
     width: 10%;
-    gap: 10px;
+    gap: 12px;
 }
 .tamaño {
     width: 15px;
@@ -414,6 +420,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 12vh;
     padding: 30px 230px;
     background-color: rgb(255, 255, 255);
 }
@@ -432,4 +439,138 @@ footer {
     width: 30px;
     height: 30px;
     opacity: 0.8;
+}
+
+@media (max-width:1279px) {
+    /*Header*/
+    .lista a {
+        font-size: 15px;
+    }
+    .boton1 {
+        font-size: 15px;
+        padding: 9px 20px;
+    }
+    /*Seccion 1*/
+    .text {
+        padding-left: 9.5%;
+    }
+    .titulo h1 {
+        font-size: 55px;
+    }
+    .titulo h6 {
+        font-size: 16px;
+    }
+    .degradado {
+        font-size: 15px;
+    }
+    .btn2 {
+        font-size: 15px;
+        padding: 10px 30px;
+    }
+    .div-img-2 {
+        justify-content: center;
+        align-items: center;
+    }
+    .div-img-2 img {
+        margin: 0px;
+    }
+
+    /*Sección 2*/
+    .sec2-titulo {
+        padding-bottom: 40px;
+        font-size: 30px;
+    }
+    .sec2-img img {
+        height: 220px;
+    }
+    .sec2-text {
+        padding-left: 85px;
+    }
+    .sec2-text h3 {
+        font-size: 30px;
+    }
+    .sec2-text p {
+        margin-top: 20px;
+        font-size: 14px;
+        width: 80%;
+    }
+    .tit-list {
+        padding-top: 12px;
+        padding-bottom: 6px;
+    }
+    .tit-list h4 {
+        font-size: 17.5px;
+    }
+    .list img{
+        width: 14px;
+        height: 14px;
+    }
+    .list li {
+        font-size: 14px;
+    }
+
+    /*Seccion 3*/
+    
+    .sec3-tit h2 {
+        font-size: 45px;
+    }
+    .sec3-tit p {
+        font-size: 14px;
+        width: 70%;
+    }
+    .sec3-art {
+        width: 28%;
+    }
+    .rosado img {
+        width: 30%;
+    }
+    .rosado h4 {
+        font-size: 16px;
+    }
+    .oscuro img {
+        width: 30%;
+    }
+    .oscuro h4 {
+        font-size: 16px;
+    }
+    .signo {
+        padding: 5px 2px;
+    }
+    .precio {
+        height: 10%;
+    }
+    .precio h5 {
+        font-size: 35px;
+    }
+    .vinetas {
+        gap: 8px;
+    }
+    .lista2-text {
+        font-size: 15px;
+    }
+    .conte-text p {
+        font-size: 15px;
+        width: 80%;
+    }
+
+    /*Footer*/
+    footer {
+        padding: 25px 50px;
+    }
+    .text-foot {
+        font-size: 15px;
+    }
+    .img-foot {
+        gap: 15px;
+    }
+    .img-foot img {
+        width: 24px;
+        height: 24px;
+    }
+}
+@media (max-width:920) {
+    .botones {
+        margin: 2%;
+        flex-wrap: wrap;
+    }
 }
