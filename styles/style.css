@@ -96,7 +96,6 @@ main {
 }
 .botones {
     display: flex;
-    width: auto;
     gap: 8px;
     padding: 5px;
     border: 2px solid rgb(88, 81, 115);
@@ -568,9 +567,21 @@ footer {
         height: 24px;
     }
 }
-@media (max-width:920) {
+@media (max-width:920px) {
     .botones {
-        margin: 2%;
-        flex-wrap: wrap;
+        max-width: 60%;
+        flex-direction: column;
+    }
+    .btn1 {
+        width: 100%;
+    }
+    .btn2 {
+        width: 100%;
+    }
+    .sec2-text {
+        padding-left: 60px;
+    }
+    .sec2-img{
+        align-items: center;
     }
 }
